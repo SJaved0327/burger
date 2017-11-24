@@ -5,13 +5,15 @@ var connection;
 // Make connection.
 if (process.env.JAWSDB_URL){
   connection = mysql.createConnection(proces.env.JAWSDB_URL);
+  console.log("hello");
 } else {
   connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "hacktheplanet",
-    database: "todoagain_db"
+    password: "",
+    database: "burgers_db"
   });
+  console.log("oh hai");
 };
 
 connection.connect();

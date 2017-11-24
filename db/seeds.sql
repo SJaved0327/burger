@@ -1,6 +1,6 @@
 ### Seeds
 
-INSERT INTO burgers (burger_name, devoured, nowDate) 
-VALUES ('Cheeseburger', true, '5');
+INSERT INTO burgers (burger_name, devoured) 
+VALUES ('Cheeseburger', true);
 
 
