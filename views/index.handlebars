@@ -37,33 +37,42 @@
         <!-- Devoured -->
         <div class="col-lg-6"><!-- 2.0 COL 6 -->
 
-          <h2>Burgers that are not devoured!</h2>
-
-          <ul>
-            {{#each burgers}}
-              {{#unless devoured}}
-                {{> burgers/burger-block devoured=false}}
-              {{/unless}}
-            {{/each}}
-          </ul>
+          <div class="card" style="width: 20rem;">
+          <div class="card-body">
+            <h4 class="card-title">Can't wait to eat these!</h4>
+            <p class="card-text">
+              <ul>
+                {{#each burgers}}
+                  {{#unless devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                  {{/unless}}
+                {{/each}}
+              </ul>
+            </p>
+          </div>
+          </div>
 
         </div>
 
         <!-- Not Devoured -->
         <div class="col-lg-6"><!-- 2.0 COL 6 -->
 
-          <h2>Burgers that are devoured!</h2>
-
-          <ul>
-            {{#each burgers}}
-              {{#if devoured}}
-                {{> burgers/burger-block devoured=true}}
-              {{/if}}
-            {{/each}}
-          </ul>
+          <div class="card" style="width: 20rem;">
+          <div class="card-body">
+            <h4 class="card-title">Can't wait to eat these!</h4>
+            <p class="card-text">
+              <ul>
+                {{#each burgers}}
+                  {{#if devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                  {{/if}}
+                {{/each}}
+              </ul>
+            </p>
+          </div>
+          </div>
 
         </div>
-
       </div>
 
     <!-- END Main App Content -->
