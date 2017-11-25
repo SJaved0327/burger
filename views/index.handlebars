@@ -12,19 +12,14 @@
         
         <div class="col-lg-12 text-center">
           <h1>It's Burger Time!</h1>
-          <img src="/assets/img/burger.png" alt="Hamburger" height="100px" width="100px">
+          <br>
+          <img src="/assets/img/burger.png" alt="Hamburger" height="100px" width="125px">
           <br>
           <form class="create-form">
 
             <div class="form-group">
               <label for="bur">Add a burger:</label>
               <input type="text" id="bur" name="name"> <button type="submit">Submit</button>
-            </div>
-
-            <div class="form-group">
-              <label for="devoured">Devoured?</label><br>
-              <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-              <input type="radio" name="devoured" value="0"> Can't wait to eat it!
             </div>
 
           </form>
@@ -39,7 +34,7 @@
 
           <div class="card" style="width: 20rem;">
           <div class="card-body">
-            <h4 class="card-title">Can't wait to eat these!</h4>
+            <h4 class="card-title text-center">Can't wait to eat these!</h4>
             <p class="card-text">
               <ul>
                 {{#each burgers}}
@@ -59,7 +54,7 @@
 
           <div class="card" style="width: 20rem;">
           <div class="card-body">
-            <h4 class="card-title">Can't wait to eat these!</h4>
+            <h4 class="card-title text-center">That was yummy!</h4>
             <p class="card-text">
               <ul>
                 {{#each burgers}}
@@ -73,9 +68,9 @@
           </div>
 
         </div>
-      </div>
 
     <!-- END Main App Content -->
+      </div>
     </div>
 
     <div class="col-lg-2"><!-- 1.0 COL 2 -->
